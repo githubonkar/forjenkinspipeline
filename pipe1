@@ -1,1 +1,27 @@
- iam for pipe line
+pipeline {
+    agent any
+
+    stages {
+        stage('dev') {
+            steps {
+                echo 'dev'
+            }
+        }
+         stage('deloy') {
+            steps {
+                echo 'depoly'
+            }
+        }
+     stage('test') {
+            steps {
+                echo 'test'
+            }
+        }
+         stage('release') {
+            steps {
+                echo 'release'
+            }
+        }
+    }
+}
+
